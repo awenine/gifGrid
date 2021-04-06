@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 
-export interface FormProps {}
+export interface FormProps {
+  handleSearch: (searchTerm: string) => void;
+}
 
-const Form: React.FC<FormProps> = () => {
+const Form: React.FC<FormProps> = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <form className="flex flex-col items-center">
+    <form 
+      className="flex flex-col items-center"
+      onSubmit={(e) => {
+        e.preventDefault();
+        handleSearch(searchTerm)
+      }}  
+    >
       <label htmlFor="searchGifs">
         <input
           className="border-solid border-2 m-3 p-2"

@@ -8,11 +8,16 @@ export interface DashboardProps {
  
 const Dashboard: React.SFC<DashboardProps> = () => {
   const [test, setTest] = useState("");
+
+  function handleSearch(input:string): void {
+    setTest(input)
+  }
+
   return ( 
     <div className="flex flex-col items-center">
-      <Form />
+      <Form handleSearch={handleSearch} />
       <DisplayGrid />
-      {test}
+      {`"${test}"`}
     </div>
    );
 }
