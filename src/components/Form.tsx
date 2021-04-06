@@ -16,12 +16,13 @@ const Form: React.FC<FormProps> = ({ handleSearch }) => {
       }}  
     >
       <label htmlFor="searchGifs">
+        {'Search for GIFs -'}
         <input
           className="border-solid border-2 m-3 p-2"
           id="searchGifs"
           type="text"
           value={searchTerm}
-          placeholder="Search for gifs..."
+          placeholder="Type a search term..."
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </label>
