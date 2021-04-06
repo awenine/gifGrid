@@ -5,33 +5,37 @@ export interface DisplayGridProps {}
 
 const DisplayGrid: React.FC<DisplayGridProps> = () => {
   return (
-    <div className="grid grid-cols-20 grid-rows-11 w-80 h-44">
-      <div className="bg-red-200 row-span-full col-start-1 col-span-11">
-        <GifPanel />
+    <div className="grid grid-cols-20 grid-rows-11 w-3/4 border-2 border-solid border-blue-100 p-4">
+      <div className="row-span-full col-start-1 col-span-11">
+        <GifPanel
+          gifDetails={{ id: "Hg1ok0WPJR1Qs", name: "Cat on motorbike" }}
+        />
       </div>
-      <div className="bg-blue-200 row-span-full col-start-11 col-span-1"></div>
-      <div className="bg-red-200 row-start-1 row-span-5 col-start-12 col-span-5">
-        <GifPanel />
+      <div className="row-span-full col-start-12 col-span-1"></div>
+      <div className="row-start-1 row-span-5 col-start-13 col-span-5">
+        <GifPanel gifDetails={{ id: "26wGmnW1ZImXe", name: "Cat snuggle" }} />
       </div>
-      <div className="bg-blue-200 row-start-6 row-span-1 col-start-12 col-span-5"></div>
-      <div className="bg-red-200 row-start-7 row-span-5 col-start-12 col-span-5">
-        <GifPanel />
+      <div className="row-start-6 row-span-1 col-start-13 col-span-5"></div>
+      <div className="row-start-7 row-span-5 col-start-13 col-span-5">
+        <GifPanel gifDetails={{ id: "e8D8XV9fWrpF6", name: "Cats cycling" }} />
       </div>
-      <div className="bg-blue-200 row-span-full col-start-17 col-span-1"></div>
-      <div className="bg-red-200 row-span-2 col-span-2">
-        <GifPanel />
+      <div className="row-span-full col-start-18 col-span-1"></div>
+      <div className="row-span-2 col-span-2">
+        <GifPanel
+          gifDetails={{ id: "mLfyMq5L49H4bJRa9L", name: "Cat animation" }}
+        />
       </div>
-      <div className="bg-blue-200 col-span-2"></div>
-      <div className="bg-red-200 row-span-2 col-span-2">
-        <GifPanel />
+      <div className="col-span-2"></div>
+      <div className="row-span-2 col-span-2">
+        <GifPanel gifDetails={{ id: "l3q2AMoPRflHphYM8", name: "cat lick" }} />
       </div>
-      <div className="bg-blue-200 col-span-2"></div>
-      <div className="bg-red-200 row-span-2 col-span-2">
-        <GifPanel />
+      <div className="col-span-2"></div>
+      <div className="row-span-2 col-span-2">
+        <GifPanel gifDetails={{ id: "10rW4Xw9eO0RmU", name: "Cat massage" }} />
       </div>
-      <div className="bg-blue-200 col-span-2"></div>
-      <div className="bg-red-200 row-span-2 col-span-2">
-        <GifPanel />
+      <div className="col-span-2"></div>
+      <div className="row-span-2 col-span-2">
+        <GifPanel gifDetails={{ id: "JQRKxN6GuhGhy", name: "Cat crowd" }} />
       </div>
     </div>
   );
