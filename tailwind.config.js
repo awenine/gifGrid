@@ -31,6 +31,12 @@ module.exports = {
        '10': '10',
        '11': '11',
       },
+      width: {
+        '80vw': '80vw',
+      },
+      height: {
+        '44vw': '44vw'
+      }
     },
   },
   variants: {

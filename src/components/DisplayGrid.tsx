@@ -8,7 +8,7 @@ export interface DisplayGridProps {
 
 const DisplayGrid: React.FC<DisplayGridProps> = ({ gifInfo }) => {
   return (
-    <div className="grid grid-cols-20 grid-rows-11 w-3/4 border-2 border-solid border-blue-100 p-4">
+    <div className="w-80vw h-44vw grid grid-cols-20 grid-rows-11 border-2 border-solid border-blue-100 p-4">
       <div className="row-span-full col-start-1 col-span-11">
         <GifPanel
           gifDetails={gifInfo[0] || {id:'', title:''}}
