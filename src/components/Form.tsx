@@ -8,15 +8,15 @@ const Form: React.FC<FormProps> = ({ handleSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <form 
+    <form
       className="flex flex-col items-center"
       onSubmit={(e) => {
         e.preventDefault();
-        handleSearch(searchTerm)
-      }}  
+        handleSearch(searchTerm);
+      }}
     >
       <label htmlFor="searchGifs">
-        {'Search for GIFs -'}
+        {"Search for GIFs -"}
         <input
           className="border-solid border-2 m-3 p-2 w-80"
           id="searchGifs"

@@ -15,12 +15,12 @@ const GifPanel: React.FC<GifPanelProps> = ({ gifDetails }) => {
         data-tip={`${gifDetails.title}`}
         data-background-color="lightgreen"
         className="object-cover object-center w-full"
-        src={`https://media.giphy.com/media/${gifDetails.id || "ycfHiJV6WZnQDFjSWH"}/giphy.gif`}
-        alt={gifDetails.title}
+        src={`https://media.giphy.com/media/${
+          gifDetails.id || "ycfHiJV6WZnQDFjSWH"
+        }/giphy.gif`}
+        alt={gifDetails.title || "GIF not loaded"}
       />
-      <ReactTooltip 
-        className="bg-red-300"
-      />
+      <ReactTooltip className="bg-red-300" />
     </div>
   );
 };
