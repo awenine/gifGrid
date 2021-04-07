@@ -1,8 +1,6 @@
 # gifGrid
 
 A search app for displaying themed GIFs (from the GIPHY API) in a grid layout.
-A deployed version of this app is available here:
-[gifGrid online](...)
 
 ## Technology
 
