@@ -1,6 +1,6 @@
 # gifGrid
 
-A basic app for searching a location API and displaying map data for each location.
+A search app for displaying themed GIFs (from the GIPHY API) in a grid layout.
 A deployed version of this app is available here:
 [gifGrid online](...)
 
@@ -30,6 +30,7 @@ An `example.env` file is included for reference.
 - The gif frames initially show a default loading GIF, and return to this when no GIFs are found.
 - GIFs are cropped to a square regardless of their original proportions.
 - The 'rotate' button moves the order of the fetched GIFs, allowing them all to be seen at differing sizes.
+- Hovering over a gif shows its title and user (if available).
 
 ## TODO & Further Features
 
