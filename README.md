@@ -2,6 +2,8 @@
 
 A search app for displaying themed GIFs (from the GIPHY API) in a grid layout.
 
+<img alt="gifGrid screenshot" title="the app showing 'cat' GIFs 🐈"  src="./public/gifGrid-screenshot-cats.png" width="60%" align="center">
+
 ## Technology
 
 This project makes use of:
